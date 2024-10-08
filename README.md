@@ -4,8 +4,8 @@ This project is an Ebook Management System built using Node.js, Express.js, Mong
 
 
 ## Live Demo Link
-Frontend - https://ebook-library-management-vinit-patels-projects.vercel.app/
-backend - https://ebook-library-management.onrender.com
+- Frontend - https://ebook-library-management-vinit-patels-projects.vercel.app/
+- backend - https://ebook-library-management.onrender.com
 
 # Features
  - **User Authentication**: Secure login and access control for users (handled in UserController).
