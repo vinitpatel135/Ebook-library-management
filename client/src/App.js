@@ -28,8 +28,8 @@ function App() {
         <Navbar Auth={Auth} setAuth={setAuth} />
         <Routes>
           <Route path="/" element={<Home Auth={Auth} />} />
-          <Route path="/your-event" element={<YourEbooks Auth={Auth} />} />
-          <Route path="/book-event" element={<BookEvent Auth={Auth} />} />
+          <Route path="/your-books" element={<YourEbooks Auth={Auth} />} />
+          <Route path="/borrow-books" element={<BookEvent Auth={Auth} />} />
           <Route path="/signup" element={<SignUp Auth={Auth} setAuth={setAuth} />} />
           <Route path="/signin" element={<SignIn Auth={Auth} setAuth={setAuth} />} />
         </Routes>
