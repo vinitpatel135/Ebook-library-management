@@ -104,7 +104,7 @@ const Home = ({ Auth }) => {
                                         alt={ebook?.title}
                                         style={{
                                             width: '100%',
-                                            height: '200px',
+                                            height: '300px',
                                             objectFit: 'contain',  // Ensures no cropping, fits entire image
                                             borderRadius: '8px',
                                             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
