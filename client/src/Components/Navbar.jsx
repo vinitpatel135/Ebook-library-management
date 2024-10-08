@@ -60,7 +60,7 @@ const Navbar = ({ Auth, setAuth }) => {
             <Container maxWidth="lg">
                 <Toolbar>
                     <Typography variant="h6" style={{ flexGrow: 1 }}>
-                        My Blog App
+                        E-Books Library
                     </Typography>
 
                     {isMobile ? (
