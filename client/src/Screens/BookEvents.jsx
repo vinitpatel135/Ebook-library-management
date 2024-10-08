@@ -53,7 +53,7 @@ const BookEvent = ({ Auth }) => {
     return (
         <Container maxWidth="lg" style={{ marginTop: '2rem' }}>
             <Typography variant="h4" gutterBottom align="center">
-                Your Booked Events
+                Your Borrow Books
             </Typography>
 
             {events?.length === 0 ? (
