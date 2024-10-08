@@ -31,11 +31,11 @@ const Navbar = ({ Auth, setAuth }) => {
             <ListItem button component={Link} to="/" onClick={toggleDrawer(false)} sx={{ color: 'white' }}>
                 <ListItemText primary="Home" sx={{ color: 'white', textDecoration: 'none' }} />
             </ListItem>
-            <ListItem button component={Link} to="/book-event" onClick={toggleDrawer(false)} sx={{ color: 'white' }}>
-                <ListItemText primary="Book Events" sx={{ color: 'white', textDecoration: 'none' }} />
+            <ListItem button component={Link} to="/borrow-books" onClick={toggleDrawer(false)} sx={{ color: 'white' }}>
+                <ListItemText primary="Borrow Books" sx={{ color: 'white', textDecoration: 'none' }} />
             </ListItem>
-            <ListItem button component={Link} to="/your-event" onClick={toggleDrawer(false)} sx={{ color: 'white' }}>
-                <ListItemText primary="Your Events" sx={{ color: 'white', textDecoration: 'none' }} />
+            <ListItem button component={Link} to="/your-books" onClick={toggleDrawer(false)} sx={{ color: 'white' }}>
+                <ListItemText primary="Your Books" sx={{ color: 'white', textDecoration: 'none' }} />
             </ListItem>
             {Auth && Auth._id ? (
                 <ListItem button onClick={() => { logout(); toggleDrawer(false); }} sx={{ color: 'white' }}>
@@ -87,22 +87,22 @@ const Navbar = ({ Auth, setAuth }) => {
                             <Button
                                 color="inherit"
                                 component={Link}
-                                to="/book-event"
+                                to="/borrow-books"
                                 style={{
                                     borderBottom: isActive('/book-event') ? '2px solid #fff' : 'none',
                                 }}
                             >
-                                Book Events
+                                Borrow Books
                             </Button>
                             <Button
                                 color="inherit"
                                 component={Link}
-                                to="/your-event"
+                                to="/your-books"
                                 style={{
                                     borderBottom: isActive('/your-event') ? '2px solid #fff' : 'none',
                                 }}
                             >
-                                Your Events
+                                Your Books
                             </Button>
                             {Auth && Auth._id ? (
                                 <Button
