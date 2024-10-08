@@ -57,7 +57,6 @@ class UserController extends UserModel {
         const { email, password } = req.body
         if (!email || !password) throw httpErrors[400]
         let result = await this.model.findOne({ email: email })
-        console.log(result)
         if (!result) {
             return res.status(403).send({message:"User Not Exist"})
         }
